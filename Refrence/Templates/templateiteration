@@ -1,0 +1,3 @@
+COMMAND = 'stepped forward'
+KEYS    = [Key.ctrl,Key.right]
+iterate_commands(COMMAND,KEYS,p)
