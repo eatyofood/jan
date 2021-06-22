@@ -494,7 +494,7 @@ try:
                         
                         # typeing function
                         if 'insert' in p:
-                            typewords(p.replace('insert ',''))
+                            typewords((p.replace('insert ','')+ ' '))
                             #typewords(p)
                         
 
@@ -649,7 +649,7 @@ try:
                         if 'open work enviroment' in p:
                             os.system('./launchLaunchPad.sh')
 
-                        if 'full screen' in p:
+                        if ('full screen' in p) or ('whole screen' in p):
                             press(Key.f11)
                         
                         if "proper" in p:
@@ -848,7 +848,7 @@ try:
                             press([Key.ctrl,Key.right])
                             press(Key.enter)
 
-                        if "bullet point" in p:
+                        if ("bullet point" in p) or ('bullet boy' in p):
                             press(Key.enter)
                             typewords('- ')
                         
